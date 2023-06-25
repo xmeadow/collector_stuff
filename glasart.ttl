@@ -89,7 +89,7 @@ glasart:shape a rdf:Property ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-glasart:shape a rdf:est_price ;
+glasart:est_price a rdf:Property ;
     rdfs:label "Schätzpreis" ;
     rdfs:comment "Preis" ;
     rdfs:domain o:Resource ;
