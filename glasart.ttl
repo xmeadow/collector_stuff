@@ -6,7 +6,7 @@
 @prefix o: <http://omeka.org/s/vocabs/o#> .
 @prefix glasart: <http://omeka.rosauntier.com/ns/glasart/> .
 
-<http://omeka.rosauntier.com/ns/glasart/> a owl:Ontology ;
+<https://raw.githubusercontent.com/xmeadow/collector_stuff/main/glasart.ttl> a owl:Ontology ;
     dcterms:title "GlasKunst" .
 
 glasart:Beaker a rdfs:Class ;
@@ -22,7 +22,7 @@ glasart:Can a rdfs:Class ;
     vs:term_status "experimental" .
 
 glasart:Flask a rdfs:Class ;
-    rdfs:label "Falsche" ;
+    rdfs:label "Flasche" ;
     rdfs:comment "Eine Flasche ist ein verschließbares Behältnis zum Transport und zur Lagerung von Flüssigkeiten." ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
@@ -63,6 +63,8 @@ glasart:Vase a rdfs:Class ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
+#Properties
+
 glasart:dimentions a rdf:Property ;
     rdfs:label "Abmessungen" ;
     rdfs:comment "Abmessungen (H x D)" ;
@@ -84,5 +86,11 @@ glasart:cent a rdf:Property ;
 glasart:shape a rdf:Property ;
     rdfs:label "Vasenform" ;
     rdfs:comment "Kategorie der Form" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+glasart:shape a rdf:est_price ;
+    rdfs:label "Schätzpreis" ;
+    rdfs:comment "Preis" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
