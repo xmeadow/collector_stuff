@@ -1,0 +1,88 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix o: <http://omeka.org/s/vocabs/o#> .
+@prefix glasart: <http://omeka.rosauntier.com/ns/glasart/> .
+
+<http://omeka.rosauntier.com/ns/glasart/> a owl:Ontology ;
+    dcterms:title "GlasKunst" .
+
+glasart:Beaker a rdfs:Class ;
+    rdfs:label "Becher" ;
+    rdfs:comment "Becher sind Trinkgefäße in Form eines Zylinders oder umgekehrten Kegelstumpfes (Sturzbecher) ohne Fuß und Henkel" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+glasart:Can a rdfs:Class ;
+    rdfs:label "Dose" ;
+    rdfs:comment "Eine Dose oder Büchse ist ursprünglich ein kleiner, meist eckiger, runder oder ovaler Behälter mit Deckel." ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+glasart:Flask a rdfs:Class ;
+    rdfs:label "Falsche" ;
+    rdfs:comment "Eine Flasche ist ein verschließbares Behältnis zum Transport und zur Lagerung von Flüssigkeiten." ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+glasart:Pitcher a rdfs:Class ;
+    rdfs:label "Kanne" ;
+    rdfs:comment "Eine Kanne ist ein Gefäß für Flüssigkeiten, das mit einem Henkel und meist mit einer Tülle versehen ist, um die Flüssigkeit leicht ausgießen zu können." ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+glasart:Carafe a rdfs:Class ;
+    rdfs:label "Karaffe" ;
+    rdfs:comment "Karaffen werden zum Trinken von Wasser verwendet aber auch oft zum Dekantieren von Wein." ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+glasart:Bowl a rdfs:Class ;
+    rdfs:label "Schüssel" ;
+    rdfs:comment "Eine Schüssel ist ein meist tiefes, rundbauchiges Gefäß mit oder ohne Deckel, das zum Anrichten, Servieren oder Aufbewahren von Speisen verwendet wird." ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+glasart:Shotglass a rdfs:Class ;
+    rdfs:label "Stamperl" ;
+    rdfs:comment "Kleine Gläser um Schnapps oder Likör zu servieren" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+glasart:Plate a rdfs:Class ;
+    rdfs:label "Teller" ;
+    rdfs:comment "Ein Teller ist ein meist runder, meist flacher Teil des Essgeschirrs, auf dem die Speisen vor dem Verzehr angerichtet werden oder der anderem Geschirr oder Besteck untergelegt wird und weitere Funktionen im Küchenwesen erfüllt." ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+glasart:Vase a rdfs:Class ;
+    rdfs:label "Vase" ;
+    rdfs:comment "Herstellbares Hohlgefäß, das dem Aufstellen von Schnittblumen oder auch nur zur Dekoration dient." ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+glasart:dimentions a rdf:Property ;
+    rdfs:label "Abmessungen" ;
+    rdfs:comment "Abmessungen (H x D)" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+glasart:type a rdf:Property ;
+    rdfs:label "Glastyp" ;
+    rdfs:comment "Typ nach Art bzw. Verwendungszweck" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+glasart:cent a rdf:Property ;
+    rdfs:label "Jahrhundert" ;
+    rdfs:comment "z.b. 30s" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+glasart:shape a rdf:Property ;
+    rdfs:label "Vasenform" ;
+    rdfs:comment "Kategorie der Form" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
